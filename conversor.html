@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Conversor de Moedas</title>
+
+    <link rel="stylesheet" type="text/css" href="css/global.css" />
+    <link rel="stylesheet" type="text/css" href="css/conversor.css" />
+
+    <script src="js/conversor.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <h1>Conversor de Moedas</h1>
+      </a>
+    </header>
+
+    <main>
+      <div class="container">
+        <form action="javascript:void(0)" onsubmit="converterMoeda()">
+          <label for="moedaOrigem">Moeda de Origem:</label>
+          <select id="moedaOrigem" required></select>
+
+          <label for="moedaDestino">Moeda de Destino:</label>
+          <select id="moedaDestino" required></select>
+
+          <label for="quantidade">Quantidade ($):</label>
+          <input type="number" id="quantidade" step="0.01" required />
+
+          <button type="submit">Converter</button>
+        </form>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Moeda</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody id="tabelaResultado"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Conversor de Moedas</p>
+    </footer>
+  </body>
+</html>

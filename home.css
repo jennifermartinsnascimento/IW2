@@ -1,0 +1,58 @@
+div.container {
+    max-width: 600px;
+    min-height: calc(100vh - 345px);
+    margin: 3rem auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ol li {
+    margin-left: 2rem;
+}
+
+ol li::marker {
+    color: #18be35;
+    font-weight: bold;
+}
+
+main a {
+    display: inline-block;
+
+    text-align: center;
+
+    font-size: 1.2rem;
+
+    font-weight: 700;
+
+    margin: 20px 0;
+
+    background-color: #18be35;
+    padding: 0.5rem 1rem;
+
+    border-radius: 10px;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+main a:hover {
+    background-color: #11cc9a;
+
+    cursor: pointer;
+}
+
+main div.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+main div.links a {
+    width: 100%;
+}
